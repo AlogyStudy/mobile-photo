@@ -1,0 +1,148 @@
+
+body {
+	background: #000;
+}
+
+.photo-wrap {
+	position: relative;
+}
+
+.list header {
+	height: 60px;
+	background: #E91E63;	
+}
+
+.list .back {
+	position: relative;
+}
+.list .back span:nth-child(1) {
+	position: absolute;
+	left: -2px;
+	top: 12px;
+	border: 16px solid transparent;
+	border-right: 16px solid white;
+}
+.list .back span:nth-child(2) {
+	position: absolute;
+	left: 0px;
+	top: 12px;
+	border: 16px solid transparent;
+	border-right-color: #E91E63;
+}
+
+
+.list .login {
+	line-height: 60px;
+	font-size: 18px;
+	color: white;
+	padding-right: 14px;
+}
+
+.list h1 {
+	line-height: 60px;
+	font-size: 26px;
+	color: white;
+	text-align: center;
+}
+
+
+
+/*end header*/
+
+.search {
+	padding: 10px;
+	display: -webkit-box;
+	display: flex;
+}
+
+.search .search-txt {
+	float: left;
+	-webkit-box-flex: 1;
+	flex: 1;
+	height: 38px;
+	border: 1px solid #E91E63;
+	padding-left: 10px;
+	font-size: 14px;
+	line-height: 40px;
+}
+.search button {
+	float: left;
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #E91E63;
+	background: #E91E63;
+	color: white;
+	text-align: center;
+	font-size: 14px;
+}
+
+
+
+.nav-wrap {
+	border-top: 1px solid #252525;
+	border-bottom: 1px solid #252525;
+}
+
+.nav-wrap li {
+	float: left;
+	width: 12.5%;
+	text-align: center;
+	line-height: 30px;
+	color: #ffffff;
+}
+
+
+/*图片列表样式*/
+.list-item {
+	display: -webkit-box;
+	margin-top: 10px;
+}
+.list-item .left-list {
+	-webkit-box-flex: 1;
+	padding: 6px 3px 6px 6px;
+}
+.list-item .right-list {
+	-webkit-box-flex: 1;
+	padding: 6px 6px 6px 3px;
+}
+
+.list-item img {
+	margin-bottom: 6px;
+	height: 100%;
+	display: block;
+}
+
+
+/*返回顶部*/
+
+.go-top {
+	color: white;
+	width: 40px;
+	background: #d08754;
+	height: 40px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 20px;
+	position: fixed;
+	bottom: 50px;
+	right: 14px;
+	z-index: 999;
+	display: none;
+}
+
+
+
+#listItem {
+	/*color: #fff;
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;*/
+}
+
+.tips {
+	position: absolute;
+	left: 50%;
+	bottom: -100px;
+	margin-left: -54px;
+}

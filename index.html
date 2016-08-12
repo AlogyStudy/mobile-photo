@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>图片搜索</title>
+		
+		<link rel="stylesheet" href="css/reset.css" />
+		
+	</head>
+	<body>
+		
+		
+		<div class="photo-wrap clear" id="photo-wrap">
+			
+			<div class="list clearfix" id="list">
+				
+				<header>
+					<div class="back fl">
+						<span></span>
+						<span></span>
+					</div>
+					<div class="login fr">登陆</div>
+					<h1>图片网</h1>
+				</header>
+				
+				<!--end header-->
+				
+				<div class="search">
+					<input type="text" class="search-txt" placeholder="搜索图片" />
+					<button class="search-btn">搜一搜</button>
+				</div>
+				<!--end search-->
+				
+				<nav class="nav-wrap clearfix">
+					<ul>
+						<li data-id="0">摄影</li>
+						<li data-id="1">明星</li>
+						<li data-id="2">壁纸</li>
+						<li data-id="3">宠物</li>
+						<li data-id="4">动漫</li>
+						<li data-id="5">风景</li>
+						<li data-id="6">头像</li>
+						<li data-id="7">人物</li>
+					</ul>
+				</nav>
+				<!--end nav-wrap-->
+				
+			</div>
+			<!--end list-->
+			
+			<div class="list-item clear" id="listItem">
+				
+				<div class="left-list"></div>
+				<div class="right-list"></div>
+				
+			</div>
+			<!--end list-item-->
+			
+		</div>
+		
+		<!--end photo-wrap-->
+		
+		<div class="layer" id="layer">
+			
+		</div>
+		<!--end layer-->
+		
+		
+		<script type="text/template" id="moban">
+			
+			<a href="#layer/<%= id%>">
+				<img style="<%=style%>" src="<%=url%>"/>
+			</a>
+			
+		</script>
+		
+		<script type="text/template" id="layerMoban">
+			
+			<div class="img-container">
+				<img src="<%=url%>" alt="" />
+			</div>
+			
+			<header class="title hide">
+				<div class="back fl clear">
+					<span></span>
+					<span></span>
+				</div>
+				<h1><%=title%></h1>
+			</header>
+			
+		</script>
+		
+		
+		<script src="js/sea.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/seajs-css/dist/seajs-css.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/lib/zepto/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/zepto.touch/zepto.touch.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/lib/underscore/underscore-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/backbone/backbone-min.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript">
+			
+			//配置 
+			seajs.config({
+				
+				paths: {
+					view: 'modules/view'
+				}
+				
+			});
+			
+			//载入入口文件
+			seajs.use('app',function ( app ) {
+				
+				//程序入口
+				app.showApp();
+				
+			});
+			
+		</script>
+	
+	<div class="go-top">返回顶部</div>
+	
+	</body>
+</html>

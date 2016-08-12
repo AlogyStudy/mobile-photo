@@ -1,0 +1,76 @@
+
+body {
+	background: #000;
+}
+
+.layer {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #000;
+	display: none;
+}
+
+
+.layer header {
+	height: 60px;
+	background: #E91E63;	
+}
+
+.layer .back {
+	position: relative;
+}
+.layer .back span:nth-child(1) {
+	position: absolute;
+	left: -2px;
+	top: 12px;
+	border: 16px solid transparent;
+	border-right: 16px solid white;
+}
+.layer .back span:nth-child(2) {
+	position: absolute;
+	left: 0px;
+	top: 12px;
+	border: 16px solid transparent;
+	border-right-color: #E91E63;
+}
+
+.layer .title.hide {
+	display: none;
+}
+
+.layer .login {
+	line-height: 60px;
+	font-size: 18px;
+	color: white;
+	padding-right: 14px;
+}
+
+.layer h1 {
+	line-height: 60px;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+}
+
+
+
+
+/* 图片容器样式 */
+.layer .img-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+.layer .img-container img {
+	max-width: 100%;
+	max-height: 100%;
+	vertical-align: middle;
+}

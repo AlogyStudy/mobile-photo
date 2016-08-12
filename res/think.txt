@@ -1,0 +1,26 @@
+
+使用到的框架
+backbone，underscore，zepot,seajs,seajs-css,seajs-preload
+
+文件结构:
+
+根目录：
+photo
+
+	data: 数据文件
+	img: 图片文件
+	js
+		lib: 使用到的第三方库文件
+		modeuls: 模块文件
+			collections: collections 文件
+			model: 模型文件
+			view : 视图文件 
+				layer
+				list
+		Seajs (为了其他模块引用方便不放入 lib文件夹中)
+			
+	index.html 首页	
+	app.js  入口文件(路由逻辑)
+
+模块的css和js放在一起 引用方便
+

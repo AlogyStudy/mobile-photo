@@ -1,0 +1,25 @@
+{
+  "name": "mobile-photo",
+  "homepage": "https://github.com/AlogyStudy/mobile-photo",
+  "authors": [
+    "Xingzhang Lin <1129507496@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "zepto": "^1.1.6",
+    "zepto.touch": "*",
+    "seajs-css": "*"
+  }
+}
